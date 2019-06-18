@@ -26,8 +26,6 @@ test('nx.list2map', function() {
     }
   });
 
-  console.log('rs2', rs2);
-
   expect(rs1).toEqual({
     '1': { id: 1, name: 'xiaoming' },
     '2': { id: 2, name: 'lihua' },
