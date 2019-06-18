@@ -10,8 +10,8 @@
   var nx = global.nx || require('next-js-core2');
   var DEFAULT_OPTIONS = {
     key: 'id',
-    value: function(inValue) {
-      return inValue;
+    value: function(index, value, array) {
+      return value;
     }
   };
 
