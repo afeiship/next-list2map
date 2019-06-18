@@ -1,9 +1,6 @@
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
-  var isString = function(inValue) {
-    return typeof inValue === 'string';
-  };
   var DEFAULT_OPTIONS = {
     key: 'id',
     value: function(inValue) {
@@ -15,9 +12,10 @@
     var result = {};
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
     var getValue = function(inName, inIndex, inItem, inArray) {
-      var res = isString(options[inName])
-        ? nx.get(inItem, options[inName])
-        : options[inName](inIndex, inItem, inArray);
+      var res =
+        typeof options[inName] === 'string'
+          ? nx.get(inItem, options[inName])
+          : options[inName](inIndex, inItem, inArray);
       return res;
     };
     inArray.forEach(function(value, index) {
