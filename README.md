@@ -11,13 +11,13 @@ npm install -S afeiship/next-list2map --registry=https://registry.npm.taobao.org
 ```js
 import 'next-list2map';
 
-var items = [
+const items = [
   { id: 1, name: 'xiaoming' },
   { id: 2, name: 'lihua' },
   { id: 3, name: 'hanmeimei' }
 ];
 
-var result = nx.list2map(items, {
+const result = nx.list2map(items, {
   key: 'id',
   value: function(i, val) {
     return val;
