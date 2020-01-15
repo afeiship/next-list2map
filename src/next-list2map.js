@@ -1,6 +1,6 @@
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var DEFAULT_OPTIONS = {
     key: 'id',
     value: function(index, value, array) {
@@ -19,12 +19,7 @@
       return res;
     };
     inArray.forEach(function(value, index) {
-      result[getValue('key', index, value, inArray)] = getValue(
-        'value',
-        index,
-        value,
-        inArray
-      );
+      result[getValue('key', index, value, inArray)] = getValue('value', index, value, inArray);
     });
     return result;
   };

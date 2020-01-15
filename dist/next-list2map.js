@@ -1,13 +1,15 @@
 /*!
- * name: next-list2map
+ * name: @feizheng/next-list2map
+ * description: Transform list to map.
  * url: https://github.com/afeiship/next-list2map
  * version: 1.0.0
+ * date: 2020-01-15 12:29:42
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var DEFAULT_OPTIONS = {
     key: 'id',
     value: function(index, value, array) {
@@ -26,12 +28,7 @@
       return res;
     };
     inArray.forEach(function(value, index) {
-      result[getValue('key', index, value, inArray)] = getValue(
-        'value',
-        index,
-        value,
-        inArray
-      );
+      result[getValue('key', index, value, inArray)] = getValue('value', index, value, inArray);
     });
     return result;
   };
@@ -40,3 +37,5 @@
     module.exports = nx.list2map;
   }
 })();
+
+//# sourceMappingURL=next-list2map.js.map

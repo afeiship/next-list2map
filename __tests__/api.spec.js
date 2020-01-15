@@ -1,5 +1,6 @@
-var nx = require('next-js-core2');
+const nx = require('@feizheng/next-js-core2');
 require('../src/next-list2map');
+
 var items = [];
 var deepItems = [];
 
