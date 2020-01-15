@@ -2,8 +2,8 @@
  * name: @feizheng/next-list2map
  * description: Transform list to map.
  * url: https://github.com/afeiship/next-list2map
- * version: 1.0.0
- * date: 2020-01-15 12:29:42
+ * version: 1.0.1
+ * date: 2020-01-15 12:31:10
  * license: MIT
  */
 
