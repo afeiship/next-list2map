@@ -3,7 +3,7 @@
  * description: Transform list to map.
  * homepage: https://github.com/afeiship/next-list2map
  * version: 1.0.0
- * date: 2020-11-22 20:15:29
+ * date: 2020-11-22 20:17:21
  * license: MIT
  */
 
